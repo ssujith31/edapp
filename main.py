@@ -22,7 +22,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 socketio = SocketIO(app)
 #app = Flask(__name__)
-client = OpenAI(api_key="")
+client = OpenAI(api_key="sk-proj-ZQxVgMRihsgdh2xMI4HMT3BlbkFJ3s4Qpi7DdWr8Lr2k8iTs")
 
 assistant = client.beta.assistants.create(
   name="Math Tutor",
