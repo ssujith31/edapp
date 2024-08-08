@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+
+            function start1()
+            {
+                var request = $.ajax({
+                    url: "/startconvert2",
+                    type: "POST",
+                    data: {"cmd" : "convert"},
+                    success: function(data){
+                     alert(data.filename);
+                }
+            });
+            }
+        </script>
+    </head>
+<body>
+ <button onclick="start1()">Start</button>
+</body>
+</html>
