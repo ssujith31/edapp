@@ -1,2 +1,2 @@
 # edapp
-Education App
+It's an Education App
