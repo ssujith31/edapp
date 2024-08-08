@@ -1,0 +1,12 @@
+Addition is one of the four basic operations of arithmetic in mathematics. It represents the process of calculating the total of two or more numbers or quantities. The symbol used for addition is the plus sign (+). 
+
+Here are some key points about addition:
+
+- **Basic Concept**: When you add two numbers, you combine them to form a larger number. For example, \(2 + 3 = 5\).
+- **Terminology**: The numbers being added are called "addends," and the result is called the "sum." For instance, in the equation \(4 + 5 = 9\), 4 and 5 are the addends, and 9 is the sum.
+- **Properties**:
+  - **Commutative Property**: The order in which you add the numbers does not change the sum. For example, \(3 + 4 = 4 + 3\).
+  - **Associative Property**: When adding three or more numbers, the way in which the numbers are grouped does not change the sum. For example, \((1 + 2) + 3 = 1 + (2 + 3)\).
+  - **Identity Property**: The sum of any number and zero is the number itself. For example, \(7 + 0 = 7\).
+
+Addition is fundamental in mathematics and is used in various applications, from basic counting to more complex calculations in different fields such as science, engineering, and finance.

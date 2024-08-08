@@ -1,0 +1,13 @@
+Subtraction is another basic operation of arithmetic in mathematics. It represents the process of taking away one number from another to find the difference between them. The symbol used for subtraction is the minus sign (−).
+
+Here are some key points about subtraction:
+
+- **Basic Concept**: When you subtract one number from another, you determine how much less one number is compared to the other. For example, \(5 - 3 = 2\).
+- **Terminology**: The number from which another number is subtracted is called the "minuend," the number being subtracted is the "subtrahend," and the result is called the "difference." For instance, in the equation \(8 - 5 = 3\), 8 is the minuend, 5 is the subtrahend, and 3 is the difference.
+- **Properties**:
+  - **Non-Commutative Property**: The order in which you subtract numbers affects the result. For example, \(7 - 4 \neq 4 - 7\).
+  - **Non-Associative Property**: When subtracting three or more numbers, the way in which the numbers are grouped can change the result. For example, \((10 - 5) - 2 \neq 10 - (5 - 2)\).
+  - **Identity Property**: The difference between any number and zero is the number itself. For example, \(9 - 0 = 9\).
+  - **Inverse of Addition**: Subtraction is the inverse operation of addition. If \(a + b = c\), then \(c - b = a\).
+
+Subtraction is used in various everyday situations, such as calculating change, determining distances, and comparing quantities. It is a fundamental operation in mathematics and forms the basis for more advanced concepts in algebra and beyond.

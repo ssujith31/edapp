@@ -1,0 +1,15 @@
+Division is one of the four basic operations of arithmetic in mathematics. It represents the process of splitting a number into equal parts or groups. The symbol used for division is typically a slash (/) or the division sign (÷).
+
+Here are some key points about division:
+
+- **Basic Concept**: When you divide one number by another, you determine how many times the divisor fits into the dividend. For example, \(12 \div 3\) means finding how many times 3 fits into 12, which is 4.
+- **Terminology**: In a division operation, the number being divided is called the "dividend," the number by which the dividend is divided is called the "divisor," and the result is called the "quotient." For instance, in the equation \(20 \div 4 = 5\), 20 is the dividend, 4 is the divisor, and 5 is the quotient.
+- **Properties**:
+  - **Non-Commutative Property**: The order in which you divide the numbers affects the result. For example, \(15 \div 3 \neq 3 \div 15\).
+  - **Non-Associative Property**: When dividing three or more numbers, the way in which the numbers are grouped can change the result. For example, \((24 \div 6) \div 2 \neq 24 \div (6 \div 2)\).
+  - **Identity Property**: The quotient of any number and one is the number itself. For example, \(9 \div 1 = 9\).
+  - **Zero Property**: Dividing zero by any non-zero number results in zero. For example, \(0 \div 7 = 0\). However, division by zero is undefined. For example, \(7 \div 0\) is not a valid operation and has no meaning in standard arithmetic.
+
+- **Inverse of Multiplication**: Division is the inverse operation of multiplication. If \(a \times b = c\), then \(c \div b = a\).
+
+Division is widely used in various mathematical applications, such as solving equations, computing averages, and in practical situations like dividing items equally among people. It is a fundamental operation that is essential for understanding fractions, ratios, and more advanced mathematical concepts.
