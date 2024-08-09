@@ -212,5 +212,5 @@ def startconvert2():
         # Handle the response as needed
     return {"filename": "recorded.wav"}
 
-if __name__ == '__main__':
-    socketio.run(app, debug=True, host='0.0.0.0')
+#if __name__ == '__main__':
+#    socketio.run(app, debug=True, host='0.0.0.0')
