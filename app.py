@@ -7,6 +7,8 @@ import pygame
 import speech_recognition as sr
 from gtts import gTTS
 import openai
+import os
+import threading
 
 app = Flask(__name__, static_folder='assets', template_folder='templates')
 
