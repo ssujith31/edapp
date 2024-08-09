@@ -1,10 +1,8 @@
-from flask import Flask, render_template,request, session, redirect, url_for, jsonify
-from flask_socketio import SocketIO, send, emit
+from flask import Flask, render_template,request, session, redirect, url_for
+from flask_socketio import SocketIO, emit
 from flask_session import Session
 from bs4 import BeautifulSoup
 from openai import OpenAI
-import os
-import threading
 import markdown
 import pygame
 import speech_recognition as sr
