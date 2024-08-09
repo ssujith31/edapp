@@ -20,20 +20,20 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 socketio = SocketIO(app)
 #app = Flask(__name__)
-client = OpenAI(api_key="sk-proj-ZQxVgMRihsgdh2xMI4HMT3BlbkFJ3s4Qpi7DdWr8Lr2k8iTs")
+client = OpenAI(api_key="sk-svcacct-5WprkT-n2Qp7UbWgSw0q8vdtjewYuRKiEMuXdZXvr9bxdT3BlbkFJna96_v8zVptAE0mYwWkJngkJQY-0jL5f99z033SgdKxBQA")
 
 assistant = client.beta.assistants.create(
   name="Math Tutor",
   instructions="You are a personal math tutor. Write and run code to answer math questions.",
   tools=[{"type": "code_interpreter"}],
-  model="gpt-4o",
+  model="gpt-4",
 )
 
 assistant2 = client.beta.assistants.create(
   name="Math Tutor",
   instructions="You are a personal math tutor. Write and run code to answer math questions.",
   tools=[{"type": "code_interpreter"}],
-  model="gpt-4o",
+  model="gpt-4",
 )
 
 thread = client.beta.threads.create()
