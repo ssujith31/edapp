@@ -1,14 +1,14 @@
-from flask import Flask, render_template,request, session, redirect, url_for
+import openai
+from flask import Flask, render_template, request, session, redirect, url_for
 from flask_socketio import SocketIO, emit
 from flask_session import Session
 from bs4 import BeautifulSoup
-from openai import OpenAI
 import markdown
 import pygame
 import speech_recognition as sr
-from apiclass import EventHandler
 from gtts import gTTS
-app = Flask(__name__, static_folder='assets',template_folder='templates')
+
+app = Flask(__name__, static_folder='assets', template_folder='templates')
 
 @app.after_request
 def add_header(response):
@@ -19,26 +19,31 @@ app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 socketio = SocketIO(app)
-#app = Flask(__name__)
-client = OpenAI(api_key="sk-svcacct-5WprkT-n2Qp7UbWgSw0q8vdtjewYuRKiEMuXdZXvr9bxdT3BlbkFJna96_v8zVptAE0mYwWkJngkJQY-0jL5f99z033SgdKxBQA")
 
-assistant = client.beta.assistants.create(
-  name="Math Tutor",
-  instructions="You are a personal math tutor. Write and run code to answer math questions.",
-  tools=[{"type": "code_interpreter"}],
-  model="gpt-4",
-)
+openai.api_key = "sk-svcacct-5WprkT-n2Qp7UbWgSw0q8vdtjewYuRKiEMuXdZXvr9bxdT3BlbkFJna96_v8zVptAE0mYwWkJngkJQY-0jL5f99z033SgdKxBQA"  # Replace with your actual OpenAI API key
 
-assistant2 = client.beta.assistants.create(
-  name="Math Tutor",
-  instructions="You are a personal math tutor. Write and run code to answer math questions.",
-  tools=[{"type": "code_interpreter"}],
-  model="gpt-4",
-)
+# Create assistants and threads using valid model names
+try:
+    assistant = openai.Assistant.create(
+        name="Math Tutor",
+        instructions="You are a personal math tutor. Write and run code to answer math questions.",
+        tools=[{"type": "code_interpreter"}],
+        model="gpt-4",  # Ensure this is a valid and available model
+    )
 
-thread = client.beta.threads.create()
+    assistant2 = openai.Assistant.create(
+        name="Math Tutor",
+        instructions="You are a personal math tutor. Write and run code to answer math questions.",
+        tools=[{"type": "code_interpreter"}],
+        model="gpt-4",  # Ensure this is a valid and available model
+    )
 
-thread2 = client.beta.threads.create()
+    thread = openai.Thread.create()
+
+    thread2 = openai.Thread.create()
+
+except openai.error.OpenAIError as e:
+    print(f"An error occurred: {e}")
 
 t1=""
 
@@ -331,6 +336,5 @@ def startconvert2():
 
 
 if __name__ == '__main__':
-
     socketio.run(app)
 
