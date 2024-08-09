@@ -26,14 +26,14 @@ assistant = client.beta.assistants.create(
   name="Math Tutor",
   instructions="You are a personal math tutor. Write and run code to answer math questions.",
   tools=[{"type": "code_interpreter"}],
-  model="gpt-4o",
+  model="gpt-4",
 )
 
 assistant2 = client.beta.assistants.create(
   name="Math Tutor",
   instructions="You are a personal math tutor. Write and run code to answer math questions.",
   tools=[{"type": "code_interpreter"}],
-  model="gpt-4o",
+  model="gpt-4",
 )
 
 thread = client.beta.threads.create()
